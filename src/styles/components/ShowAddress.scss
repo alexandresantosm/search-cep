@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    color: var(--title);
+
+    margin-bottom: 1rem;
+  }
+
+  section {
+    table {
+      background-color: var(--white);
+      border-collapse: collapse;
+      
+      thead {
+        background-color: var(--blue);
+        color: var(--white);
+
+        tr {
+          th {
+            padding: .5rem;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            padding: .5rem;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    width: 15%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    
+    font-weight: 700;
+
+    border-radius: 5rem;
+    border-style: none;
+
+    background-color: var(--blue);
+    color: var(--white);
+
+    transition: background-color .2s;
+  }
+
+  button:hover {
+    background-color: var(--blue-dark);
+    color: var(--white);
+  }
+}
