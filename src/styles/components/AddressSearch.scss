@@ -13,6 +13,10 @@
 
     background-color: var(--white);
 
+    border-bottom: .0625rem solid var(--yellow);
+
+    border-radius: .3125rem;
+
     h1 {
       font-size: 3rem;
       color: var(--title);
@@ -38,19 +42,18 @@
         font-size: 1rem;
 
         padding: .5rem 0;
+
+        margin-bottom: 1.5rem;
       }
     }
 
-    button {
-      width: 100%;
-      padding: 1rem 0;
+    a {
+      padding: 1rem 10rem;
 
       font-weight: 700;
 
       border-radius: 5rem;
       border-style: none;
-
-      margin-top: 1rem;
 
       background-color: var(--blue);
       color: var(--white);
@@ -58,7 +61,7 @@
       transition: background-color .2s;
     }
 
-    button:hover {
+    a:hover {
       background-color: var(--blue-dark);
       color: var(--white);
     }

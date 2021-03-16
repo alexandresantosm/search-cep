@@ -1,7 +1,15 @@
-import { AddressSearch } from './components/address-search/AddressSearch';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { AddressSearchProvider } from './contexts/AddressSearchContext';
+import Routes from './routes';
 
 import './styles/global.scss';
 
 export function App() {
-  return <AddressSearch />;
+  return (
+    <AddressSearchProvider>
+      <Router>
+        <Routes />
+      </Router>
+    </AddressSearchProvider>
+  );
 }

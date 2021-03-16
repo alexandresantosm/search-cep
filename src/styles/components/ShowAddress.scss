@@ -12,6 +12,8 @@
   }
 
   section {
+    margin-bottom: 1.5rem;
+    
     table {
       background-color: var(--white);
       border-collapse: collapse;
@@ -37,7 +39,7 @@
     }
   }
 
-  button {
+  a {
     width: 15%;
     padding: 1rem;
     margin-top: 1.5rem;
@@ -53,7 +55,7 @@
     transition: background-color .2s;
   }
 
-  button:hover {
+  a:hover {
     background-color: var(--blue-dark);
     color: var(--white);
   }

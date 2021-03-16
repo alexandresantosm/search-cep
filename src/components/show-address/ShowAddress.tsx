@@ -1,6 +1,10 @@
+import { Link } from 'react-router-dom';
+import { useAddressSearch } from '../../contexts/AddressSearchContext';
 import '../../styles/components/ShowAddress.scss';
 
 export function ShowAddress() {
+  const { address } = useAddressSearch();
+
   return (
     <div className="container">
       <main>
@@ -20,18 +24,18 @@ export function ShowAddress() {
             </thead>
             <tbody>
               <tr>
-                <td>0000000</td>
-                <td>Rua A</td>
-                <td>Casa</td>
-                <td>Meu Bairro</td>
-                <td>Minha Localidade</td>
-                <td>CE</td>
+                <td>{address.cep}</td>
+                <td>{address.logradouro}</td>
+                <td>{address.complemento}</td>
+                <td>{address.bairro}</td>
+                <td>{address.localidade}</td>
+                <td>{address.uf}</td>
               </tr>
             </tbody>
           </table>
         </section>
 
-        <button>Nova Busca</button>
+        <Link to="/">Nova Busca</Link>
       </main>
     </div>
   );
